@@ -48,7 +48,7 @@ const Registration = () => {
                       error.response?.data.statusCode === 401 ||
                       error.response?.data.statusCode === 403
                     ) {
-                      alert("you are not a super admin or you are not logged in");
+                      alert("you are not a super admin");
                     }
                   });
         action.resetForm();
