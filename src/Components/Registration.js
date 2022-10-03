@@ -36,7 +36,6 @@ const Registration = () => {
                   password: values.password,
                   userRole: values.selectedRole,
                 };
-                console.log(signUpData);
                 axios
                   .post("http://localhost:3001/users/create", signUpData, config)
                   .then((result) => {
